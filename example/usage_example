@@ -1,0 +1,77 @@
+
+# University Management System Project
+
+class Person:
+    """Base class representing a person in the university system."""
+    
+    def __init__(self, name, roll, mobile):
+        """Initialize a person with name, roll number, and mobile number."""
+        self.name = name
+        self.roll = roll
+        self.mobile = mobile
+
+class Student(Person):
+    """Derived class representing a student, inherits from Person."""
+    
+    def __init__(self, name, roll, mobile, branch):
+        """Initialize a student with branch attribute in addition to inherited attributes."""
+        self.branch = branch
+        super().__init__(name, roll, mobile)
+
+class Teacher(Person):
+    """Derived class representing a teacher, inherits from Person."""
+    
+    def __init__(self, name, roll, mobile, subject):
+        """Initialize a teacher with subject attribute in addition to inherited attributes."""
+        self.subject = subject
+        super().__init__(name, roll, mobile)
+
+class College:
+    """Class representing a college containing students and teachers."""
+    
+    def __init__(self, name):
+        """Initialize the college with a name and empty lists for students and teachers."""
+        self.name = name
+        self.students = []
+        self.teachers = []
+
+    def add_student(self, student):
+        """Add a student to the college."""
+        self.students.append(student)
+
+    def add_teacher(self, teacher):
+        """Add a teacher to the college."""
+        self.teachers.append(teacher)
+
+    def list_students(self):
+        """Print a list of all students in the college."""
+        for student in self.students:
+            print(f"Student Name: {student.name}\nRoll: {student.roll}\nMobile: {student.mobile}\nBranch: {student.branch}")
+
+    def list_teachers(self):
+        """Print a list of all teachers in the college."""
+        for teacher in self.teachers:
+            print(f"Teacher Name: {teacher.name}\nRoll: {teacher.roll}\nMobile: {teacher.mobile}\nSubject: {teacher.subject}")
+
+# Example usage
+if __name__ == "__main__":
+    # Create a college instance
+    college = College("Satya Tech University")
+
+    # Add students
+    student1 = Student("Pavan", '19S135808',7671953048, "Computer Science")
+    student2 = Student("Kumar", '19S115614',8745136940, "Electrical Engineering")
+    college.add_student(student1)
+    college.add_student(student2)
+
+    # Add teachers
+    teacher1 = Teacher("Dr. Sai", '15S132408',9488389782, "Physics")
+    teacher2 = Teacher("Dr. Vardhan", '15S119848',7795461332, "Mathematics")
+    college.add_teacher(teacher1)
+    college.add_teacher(teacher2)
+
+    # List all students and teachers
+    print("Students in the College:\n")
+    college.list_students()
+    print("\nTeachers in the College:\n")
+    college.list_teachers()
