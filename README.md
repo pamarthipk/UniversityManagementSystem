@@ -34,8 +34,8 @@ from university_management import College, Student, Teacher
 college = College("Satya Tech University")
 
 # Add students
-student1 = Student("Alice", "19S135808", "7671953048", "Computer Science")
-student2 = Student("Bob", "19S115614", "8745136940", "Electrical Engineering")
+student1 = Student("Pavan", "19S135808", "7671953048", "Computer Science")
+student2 = Student("Kumar", "19S115614", "8745136940", "Electrical Engineering")
 college.add_student(student1)
 college.add_student(student2)
 
