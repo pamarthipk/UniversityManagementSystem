@@ -55,15 +55,15 @@ college.list_teachers()
 ### Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/pamarthipk/UniversityManagementSystem.git
+   https://github.com/pamarthipk/UniversityManagementSystem.git
    ```
 2. Navigate to the project directory.
    ```bash
-   cd UniversityManagementSystem
+   UniversityManagementSystem
    ```
 3. Run the script.
    ```bash
-   python university_management.py
+   university_management.py
    ```
 
 ## License
