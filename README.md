@@ -4,8 +4,8 @@
 This project is a console-based Python application designed to manage a university's basic information about students and teachers. It showcases key object-oriented programming (OOP) concepts and methods in Python.
 
 ## Features
-- Create a college and add students and teachers to it.
-- List all students and teachers with relevant details.
+- Create's a college and add students and teachers to it.
+- Display's all students and teachers with relevant provided details.
 - Demonstrates OOP concepts such as inheritance, encapsulation, and method overriding.
 
 ## Project Structure
@@ -31,31 +31,31 @@ Here's how you can use the classes:
 from university_management import College, Student, Teacher
 
 # Create a college instance
-college = College("Tech University")
+college = College("Satya Tech University")
 
 # Add students
-student1 = Student("Alice", "S001", "1234567890", "Computer Science")
-student2 = Student("Bob", "S002", "0987654321", "Electrical Engineering")
+student1 = Student("Alice", "19S135808", "7671953048", "Computer Science")
+student2 = Student("Bob", "19S115614", "8745136940", "Electrical Engineering")
 college.add_student(student1)
 college.add_student(student2)
 
 # Add teachers
-teacher1 = Teacher("Dr. Smith", "T001", "1122334455", "Physics")
-teacher2 = Teacher("Dr. Jones", "T002", "6677889900", "Mathematics")
+teacher1 = Teacher("Dr. Sai", "15S162408", "9488389782", "Physics")
+teacher2 = Teacher("Dr. Vardhan", "15S119848", "7795461332", "Mathematics")
 college.add_teacher(teacher1)
 college.add_teacher(teacher2)
 
 # List all students and teachers
-print("Students in the College:")
+print("Students in the College:\n")
 college.list_students()
-print("\nTeachers in the College:")
+print("\nTeachers in the College:\n")
 college.list_teachers()
 ```
 
 ### Installation
 1. Clone the repository.
    ```bash
-   git clone https://github.com/your-username/UniversityManagementSystem.git
+   git clone https://github.com/pamarthipk/UniversityManagementSystem.git
    ```
 2. Navigate to the project directory.
    ```bash
